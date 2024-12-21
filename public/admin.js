@@ -93,8 +93,10 @@ define('admin/plugins/rss', [
 					includeBody: (child.find('.feed-includebody')[0].checked || ''),
 					interval: child.find('.feed-interval').val(),
 					username: child.find('.feed-user').val(),
+					manualUser: (child.find('.feed-manualuser')[0].checked || ''),
 					entriesToPull: child.find('.feed-entries-to-pull').val(),
 					tags: child.find('.feed-tags').val(),
+					postingMode: child.find('.feed-postingmode').val(),
 					timestamp: child.find('.feed-topictimestamp').val(),
 					lastEntryDate: child.find('.feed-lastEntryDate').val(),
 				};

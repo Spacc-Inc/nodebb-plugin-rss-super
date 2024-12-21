@@ -17,6 +17,13 @@
 				<input type="text" class="form-control form-control-sm feed-tags" value="{feeds.tags}">
 			</div>
 		</div>
+		<div class="col-sm-3 col-12">
+			<label class="form-label">Creation Mode</label>
+			<select class="form-select form-select-sm feed-postingmode" data-postingmode="{feeds.postingMode}">
+				<option value="topics">New Topics Only</option>
+				<option value="all">New Topics and Replies</option>
+			</select>
+		</div>
 	</div>
 
 	<div class="row mb-3">
@@ -30,6 +37,12 @@
 			<label class="form-label">Default User</label>
 			<input type="text" class="form-control form-control-sm feed-user" value="{feeds.username}">
 		</div>
+		<div class="col-sm-4 col-12">
+			<label class="form-label">
+				Force Default User
+				<input type="checkbox" class="feed-manualuser" {{{ if feeds.manualUser }}} checked {{{ end }}} >
+			</label>
+		</div>
 	</div>
 
 	<div class="row">
@@ -37,6 +50,8 @@
 			<label class="form-label">Interval</label>
 			<select class="form-select form-select-sm feed-interval" data-interval="{feeds.interval}">
 				<option value="1">1 Minute</option>
+				<option value="5">5 Minutes</option>
+				<option value="30">30 Minutes</option>
 				<option value="60">1 Hour</option>
 				<option value="720">12 Hours</option>
 				<option value="1440">24 Hours</option>
