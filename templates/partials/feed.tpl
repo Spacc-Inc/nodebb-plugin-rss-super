@@ -17,8 +17,17 @@
 				<input type="text" class="form-control form-control-sm feed-tags" value="{feeds.tags}">
 			</div>
 		</div>
+	</div>
+
+	<div class="row mb-3">
 		<div class="col-sm-4 col-12">
-			<label class="form-label">User</label>
+			<label class="form-label">
+				Include Body
+				<input type="checkbox" class="feed-includebody" {{{ if feeds.includeBody }}} checked {{{ end }}} >
+			</label>
+		</div>
+		<div class="col-sm-4 col-12">
+			<label class="form-label">Default User</label>
 			<input type="text" class="form-control form-control-sm feed-user" value="{feeds.username}">
 		</div>
 	</div>
