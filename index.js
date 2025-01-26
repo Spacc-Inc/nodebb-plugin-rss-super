@@ -69,8 +69,8 @@ RssPlugin.admin.menu = async function (custom_header) {
  * Called on `action:plugin.deactivate`
  */
 RssPlugin.admin.deactivate = function (data) {
-	if (data.id === 'nodebb-plugin-rss') {
-		pubsub.publish('nodebb-plugin-rss:deactivate');
+	if (data.id === 'nodebb-plugin-rss-super') {
+		pubsub.publish('nodebb-plugin-rss-super:deactivate');
 	}
 };
 
@@ -78,7 +78,7 @@ RssPlugin.admin.deactivate = function (data) {
  * Called on `action:plugin.uninstall`
  */
 RssPlugin.admin.uninstall = function (data) {
-	if (data.id === 'nodebb-plugin-rss') {
+	if (data.id === 'nodebb-plugin-rss-super') {
 		database.deleteFeeds();
 	}
 };
