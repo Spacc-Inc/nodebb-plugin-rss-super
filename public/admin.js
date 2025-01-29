@@ -97,6 +97,7 @@ define('admin/plugins/rss', [
 					entriesToPull: child.find('.feed-entries-to-pull').val(),
 					tags: child.find('.feed-tags').val(),
 					postingMode: child.find('.feed-postingmode').val(),
+					parentTopic: child.find('.feed-parenttopic').val(),
 					timestamp: child.find('.feed-topictimestamp').val(),
 					lastEntryDate: child.find('.feed-lastEntryDate').val(),
 				};

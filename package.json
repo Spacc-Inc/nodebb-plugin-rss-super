@@ -1,7 +1,7 @@
 {
   "name": "nodebb-plugin-rss-super",
-  "version": "4.0.2",
-  "description": "A RSS Plugin to pull feeds and post them in to categories, now supercharged",
+  "version": "4.0.3",
+  "description": "An RSS parser plugin for NodeBB, to pull feeds and post them into categories, now supercharged",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
