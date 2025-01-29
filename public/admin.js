@@ -90,7 +90,7 @@ define('admin/plugins/rss', [
 				var feed = {
 					url: child.find('.feed-url').val(),
 					category: child.find('.feed-category').val(),
-					includeBody: (child.find('.feed-includebody')[0].checked || ''),
+					bodyFormat: child.find('.feed-bodyformat').val(),
 					interval: child.find('.feed-interval').val(),
 					username: child.find('.feed-user').val(),
 					manualUser: (child.find('.feed-manualuser')[0].checked || ''),

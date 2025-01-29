@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-rss-super",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "An RSS parser plugin for NodeBB, to pull feeds and post them into categories, now supercharged",
   "main": "index.js",
   "scripts": {
