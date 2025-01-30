@@ -37,10 +37,12 @@
 
 	<div class="row mb-3">
 		<div class="col-sm-4 col-12">
-			<label class="form-label">Body Format</label>
+			<label class="form-label">Include Body</label>
 			<input type="text" class="form-control form-control-sm feed-bodyformat" value="{feeds.bodyFormat}" list="feed-bodyformat-datalist" />
 			<datalist id="feed-bodyformat-datalist">
 				<option value="#[Link Only]           [[link]] [/#]"></option>
+				<option value="#[Title+Link]          [[title]]\n\n[[link]] [/#]"></option>
+				<option value="#[Title+Link (HTML)]   [[title]]\n\n&lt;div class=&apos;link-container&apos;&gt;\n\n[[link]]\n\n&lt;/div&gt; [/#]"></option>
 				<option value="#[Snippet+Link]        [[snippet]]\n\n[[link]] [/#]"></option>
 				<option value="#[Snippet+Link (HTML)] [[snippet]]\n\n&lt;div class=&apos;link-container&apos;&gt;\n\n[[link]]\n\n&lt;/div&gt; [/#]"></option>
 				<option value="#[Content+Link]        [[content]]\n\n---\n\n[[link]] [/#]"></option>

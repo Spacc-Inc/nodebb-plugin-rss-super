@@ -24,8 +24,10 @@ define('admin/plugins/rss', [
 			});
 		});
 
-		$('.feed-topictimestamp').each(function (index, element) {
-			$(element).val($(element).attr('data-topictimestamp'));
+		['topictimestamp', 'postingmode'].forEach(function (key) {
+			$('.feed-' + key).each(function (index, element) {
+				$(element).val($(element).attr('data-' + key));
+			});
 		});
 
 		$('#addFeed').on('click', function () {
