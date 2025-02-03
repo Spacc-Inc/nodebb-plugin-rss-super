@@ -1,6 +1,6 @@
 {
     "id": "nodebb-plugin-rss-super",
-    "version": "4.0.5",
+    "version": "4.0.6",
     "name": "NodeBB RSS Super",
     "description": "An RSS parser plugin for NodeBB, to pull feeds and post them into categories, now supercharged",
     "url": "https://gitlab.com/SpaccInc/nodebb-plugin-rss-super",

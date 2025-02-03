@@ -5,8 +5,10 @@ define('admin/plugins/rss', [
 ], function (bootbox, api, autocomplete, alerts, categorySelector) {
 	const admin = {};
 	admin.init = function () {
-		$('.feed-interval').each(function (index, element) {
-			$(element).val($(element).attr('data-interval'));
+		['interval', 'delay'].forEach(function (key) {
+			$('.feed-' + key).each(function (index, element) {
+				$(element).val($(element).attr('data-' + key));
+			});
 		});
 
 		const feeds = ajaxify.data.feeds;
