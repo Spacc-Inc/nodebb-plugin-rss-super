@@ -110,6 +110,7 @@
 		<div class="col-sm-3 col-12">
 			<label class="form-label">Entry Delay</label>
 			<select class="form-select form-select-sm feed-delay" data-delay="{feeds.delay}">
+				<option value="0">None</option>
 				<option value="60">1 Minute</option>
 				<option value="120">2 Minutes</option>
 				<option value="180">3 Minutes</option>
